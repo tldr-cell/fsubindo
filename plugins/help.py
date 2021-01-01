@@ -42,10 +42,10 @@ def map(pos):
             [InlineKeyboardButton(text = '-->', callback_data = "help+2")]
         ]
     elif(pos==len(tr.HELP_MSG)-1):
-        url = "https://github.com/viperadnan-git/force-subscribe-telegram-bot/issues/new"
+        url = "https://github.com/tldr-cell/force-subscribe-telegram-bot"
         button = [
-            [InlineKeyboardButton(text = 'Support Chat', url="https://t.me/ViperCommunity")],
-            [InlineKeyboardButton(text = 'Feature Request & Issues', url=url)],
+            [InlineKeyboardButton(text = 'Project Channel', url="https://t.me/indoloaderproject")],
+            [InlineKeyboardButton(text = 'Source Code', url=url)],
             [InlineKeyboardButton(text = '<--', callback_data = f"help+{pos-1}")]
         ]
     else:
