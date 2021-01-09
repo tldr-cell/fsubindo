@@ -72,9 +72,6 @@ ENV PATH="/home/bot/bin:$PATH"
 # Install requirements
 RUN pip3 install --no-cache-dir -U -r requirements.txt
 
-# Remove No Longer Required Package
-RUN apt update && apt autoremove --purge -y
-
 # copy the content of the local src directory to the working directory
 COPY . .
 

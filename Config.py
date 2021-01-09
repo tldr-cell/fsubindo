@@ -33,4 +33,4 @@ class Messages():
         "**Developed by viperadnan**\n\n**Dihosting dan diterjemahkan ke Indonesia dari ❤️ @indoloaderproject **"
       ]
 
-      START_MSG = "**Hey [{}](tg://user?id={})**\n__I can force members to join a specific channel before writing messages in the group.\nLearn more at /help__"
+      START_MSG = "**Hai [{}](tg://user?id={})**\n__Saya dapat membisukan anggota untuk bergabung dengan satu channel agar mereka dapat dengan bebas berbicara diobrolan.\nPelajari lebih lanjut dengan /help__"
