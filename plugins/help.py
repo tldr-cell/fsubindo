@@ -39,10 +39,10 @@ def help_answer(client, callback_query):
 def map(pos):
     if(pos==1):
         button = [
-            [InlineKeyboardButton(text = '-->', callback_data = "help+2")]
+            [InlineKeyboardButton(text = '➡️', callback_data = "help+2")]
         ]
     elif(pos==len(tr.HELP_MSG)-1):
-        url = "https://github.com/tldr-cell/force-subscribe-telegram-bot"
+        url = "https://github.com/tldr-cell/fsubindo"
         button = [
             [InlineKeyboardButton(text = 'Project Channel', url="https://t.me/indoloaderproject")],
             [InlineKeyboardButton(text = 'Source Code', url=url)],

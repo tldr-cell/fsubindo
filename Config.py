@@ -24,13 +24,13 @@ class Messages():
       HELP_MSG = [
         ".",
 
-        "**Force Subscribe**\n\n__Force group members to join a specific channel before sending messages in the group.\nI will mute members if they not joined your channel and tell them to join the channel and unmute themself by pressing a button.__",
+        "**Force Subscribe**\n__Pembisuan anggota grup untuk bergabung dengan satu channel sebelum mengirim pesan ke dalam grup.\nSaya akan membisukan anggota jika mereka tidak bergabung dengan Channel Anda dan memberi tahu mereka untuk bergabung ke Channel dan menyuarakan diri mereka sendiri dengan menekan tombol.__",
         
-        "**Setup**\n\n__First of all add me in the group as admin with ban users permission and in the channel as admin.\nNote: Only creator of the group can setup me and i will leave the chat if i am not an admin in the chat.__",
+        "**Pengaturan**\n__Pertama-tama tambahkan saya di grup sebagai admin dengan izin pengguna larangan dan di channel sebagai admin.\nCatatan: Hanya pemilik grup yang dapat mengatur saya dan saya akan meninggalkan obrolan jika saya bukan admin dalam obrolan.__",
         
-        "**Commmands**\n\n__/ForceSubscribe - To get the current settings.\n/ForceSubscribe no/off/disable - To turn of ForceSubscribe.\n/ForceSubscribe {channel username} - To turn on and setup the channel.\n/ForceSubscribe clear - To unmute all members who muted by me.\n\nNote: /FSub is an alias of /ForceSubscribe__",
+        "**Perintah**\n__/ForceSubscribe - Untuk mendapatkan pengaturan saat ini.\n/ForceSubscribe no/off/disable - Untuk mematikan ForceSubscribe.\n/ForceSubscribe {channel username} - Untuk mengaktifkan dan menyiapkan channel.\n/ForceSubscribe clear - Untuk mengaktifkan semua anggota yang saya bisukan.\n\nCatatan: /FSub adalah perintah singkat /ForceSubscribe__",
         
-        "**Hosted on VPS by @indoloaderproject\n\nDeveloped by @viperadnan**"
+        "**Developed by viperadnan**\n**Dihosting dan diterjemahkan ke Indonesia dari ❤️ @indoloaderproject **"
       ]
 
       START_MSG = "**Hey [{}](tg://user?id={})**\n__I can force members to join a specific channel before writing messages in the group.\nLearn more at /help__"

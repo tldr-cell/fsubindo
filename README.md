@@ -1,6 +1,6 @@
 # Introduction
 **A Telegram Bot to force users to join a specific channel before sending messages in a group.**
-- Find it on Telegram as [Force Subscribe](https://t.me/ForceSubscribeEN_bot)
+- Find it on Telegram as [Force Subscribe](https://t.me/ForceSubscribeID_bot) as use language Indonesian
 
 ## Todo
 - [ ] Add multiple channels support
@@ -13,7 +13,7 @@
 ### Installation
 - Clone this repo
 ```
-git clone https://github.com/tldr-cell/force-subscribe-telegram-bot
+git clone https://github.com/tldr-cell/fsubindo
 ```
 - Change directory
 ```
