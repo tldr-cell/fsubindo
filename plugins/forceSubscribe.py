@@ -30,10 +30,10 @@ def _onUnMuteRequest(client, cb):
         client.answer_callback_query(cb.id, text="❗ Anda dibisukan oleh admin karena alasan lain.", show_alert=True)
     else:
       if not client.get_chat_member(chat_id, (client.get_me()).id).status == 'administrator':
-        client.send_message(chat_id, f"❗ **{cb.from_user.mention} sedang mencoba menyuarakan tetapi saya tidak dapat mengaktifkannya karena saya bukan admin dalam obrolan ini, tambahkan saya sebagai admin lagi.**\n__#Leaving this chat...__")
+        client.send_message(chat_id, f"❗ **{cb.from_user.mention} sedang mencoba menyuarakan tetapi saya tidak dapat mensuarakannya karena saya bukan admin dalam obrolan ini, tambahkan saya sebagai admin lagi.**\n__#Leaving this chat...__")
         client.leave_chat(chat_id)
       else:
-        client.answer_callback_query(cb.id, text="Peringatan: Jangan klik tombol jika Anda dapat berbicara dengan bebas.", show_alert=True)
+        client.answer_callback_query(cb.id, text="❗ Peringatan: Jangan klik tombol suarakan saya jika Anda dapat berbicara dengan bebas.", show_alert=True)
 
 
 
@@ -94,12 +94,12 @@ def config(client, message):
                 time.sleep(1)
           sent_message.edit('✅ **Mensuarakan semua anggota yang dibisukan oleh saya.**')
         except ChatAdminRequired:
-          sent_message.edit('❗ **Saya bukan admin dalam obrolan ini.**\n__Saya tidak dapat membisukan anggota karena saya bukan admin dalam obrolan ini, jadikan saya admin dengan izin pengguna blokir pengguna.__')
+          sent_message.edit('❗ **Saya bukan admin dalam obrolan ini.**\n__Saya tidak dapat membisukan anggota karena saya bukan admin dalam obrolan ini, jadikan saya admin dengan izin blokir pengguna.__')
       else:
         try:
           client.get_chat_member(input_str, "me")
           sql.add_channel(chat_id, input_str)
-          message.reply_text(f"✅ **Force Subscribe berhasil diaktifkan, semua anggota grup harus bergabung di [channel](https://t.me/{input_str}) ini untuk dapat mengirim pesan digroup ini.__", disable_web_page_preview=True)
+          message.reply_text(f"✅ **Force Subscribe berhasil diaktifkan, semua anggota grup harus bergabung di [channel](https://t.me/{input_str}) ini untuk dapat mengirim pesan dengan bebas.__", disable_web_page_preview=True)
         except UserNotParticipant:
           message.reply_text(f"❗ **Bukan Admin di Channel**\n__Saya bukan admin di [channel](https://t.me/{input_str}). Tambahkan saya sebagai admin untuk mengaktifkan Fitur ini.__", disable_web_page_preview=True)
         except (UsernameNotOccupied, PeerIdInvalid):
@@ -108,7 +108,7 @@ def config(client, message):
           message.reply_text(f"❗ **ERROR:** ```{err}```")
     else:
       if sql.fs_settings(chat_id):
-        message.reply_text(f"✅ **Force Subscribe diaktifkan dalam obrolan ini.**\n__For this [Channel](https://t.me/{sql.fs_settings(chat_id).channel})__", disable_web_page_preview=True)
+        message.reply_text(f"✅ **Force Subscribe diaktifkan dalam obrolan ini.**\n__Untuk [Channel](https://t.me/{sql.fs_settings(chat_id).channel})__", disable_web_page_preview=True)
       else:
         message.reply_text("❌ **Force Subscribe dinonaktifkan dalam obrolan ini.**")
   else:

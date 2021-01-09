@@ -1,5 +1,5 @@
 # We're using Debian Slim Buster image
-FROM python:3.9.0-slim-buster
+FROM python:3.9.1-slim-buster
 
 ENV PIP_NO_CACHE_DIR 1
 
@@ -15,7 +15,6 @@ RUN apt update && apt upgrade -y && \
     debian-archive-keyring \
     bash \
     bzip2 \
-    curl \
     figlet \
     git \
     util-linux \
@@ -26,7 +25,6 @@ RUN apt update && apt upgrade -y && \
     linux-headers-amd64 \
     musl-dev \
     musl \
-    neofetch \
     php-pgsql \
     python3-lxml \
     postgresql \
@@ -44,7 +42,6 @@ RUN apt update && apt upgrade -y && \
     openssl \
     pv \
     jq \
-    wget \
     python3 \
     python3-dev \
     libreadline-dev \
@@ -74,6 +71,9 @@ ENV PATH="/home/bot/bin:$PATH"
 
 # Install requirements
 RUN pip3 install --no-cache-dir -U -r requirements.txt
+
+# Remove No Longer Required Package
+RUN apt update && apt autoremove --purge -y
 
 # copy the content of the local src directory to the working directory
 COPY . .

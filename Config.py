@@ -30,7 +30,7 @@ class Messages():
         
         "**Perintah**\n__/ForceSubscribe - Untuk mendapatkan pengaturan saat ini.\n/ForceSubscribe no/off/disable - Untuk mematikan ForceSubscribe.\n/ForceSubscribe {channel username} - Untuk mengaktifkan dan menyiapkan channel.\n/ForceSubscribe clear - Untuk mengaktifkan semua anggota yang saya bisukan.\n\nCatatan: /FSub adalah perintah singkat /ForceSubscribe__",
         
-        "**Developed by viperadnan**\n**Dihosting dan diterjemahkan ke Indonesia dari ❤️ @indoloaderproject **"
+        "**Developed by viperadnan**\n\n**Dihosting dan diterjemahkan ke Indonesia dari ❤️ @indoloaderproject **"
       ]
 
       START_MSG = "**Hey [{}](tg://user?id={})**\n__I can force members to join a specific channel before writing messages in the group.\nLearn more at /help__"
